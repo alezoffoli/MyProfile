@@ -9,32 +9,32 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @Environment(\.openURL) var openURL
+    
     var body: some View {
-        VStack {
-            ProfileHeaderView()
-                .frame(maxHeight: 180)
+        
+        VStack() {
             
-            HStack() {
-                Styles.DetailText("Software Engineer")
-                    .frame(maxWidth: .infinity)
-                Spacer()
-                Styles.VerticalLine()
-                Spacer()
-                Styles.DetailText("Available for work")
-                    .frame(maxWidth: .infinity)
-            }
-            .padding(20)
-            
-            Styles.HorizontalLine()
-                .offset(y: -20)
-            
+            VStack() {
+                ProfileHeaderView()
+                    .frame(maxHeight: 180)
+                ProfileSubHeaderView()
+                    .padding(20)
+                    .frame(maxHeight: 80)
+                Styles.HorizontalLine()
+                    .offset(y: -20)
+            }.gesture( TapGesture().onEnded({
+                guard let url = URL(string: upworkProfileUrl) else {
+                    return
+                }
+                openURL(url) // TODO: Move this logic and add a confirmation dialog
+            })
+            )
             Spacer()
-            
             Styles.DetailText("This project was created for the sole purpose of studying SwiftUI", isOpaque: false)
                 .padding()
         }
         .background(LinearGradient(colors: [colorLightPrimary, colorDeepPrimary], startPoint: .top, endPoint: .bottom))
-        
     }
 }
 
