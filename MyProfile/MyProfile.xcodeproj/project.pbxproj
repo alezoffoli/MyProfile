@@ -17,6 +17,7 @@
 		57D4F2F827C10B77002E5132 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4F2F727C10B5A002E5132 /* AppConstants.swift */; };
 		57D4F2FB27C10C15002E5132 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4F2FA27C10C15002E5132 /* ProfileHeaderView.swift */; };
 		57D4F2FD27C10CC0002E5132 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4F2FC27C10CC0002E5132 /* Styles.swift */; };
+		57D4F30027C1670F002E5132 /* ProfileSubHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4F2FF27C1670F002E5132 /* ProfileSubHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		57D4F2F727C10B5A002E5132 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		57D4F2FA27C10C15002E5132 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		57D4F2FC27C10CC0002E5132 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		57D4F2FF27C1670F002E5132 /* ProfileSubHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSubHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				57D4F2CE27C10823002E5132 /* ContentView.swift */,
 				57D4F2FA27C10C15002E5132 /* ProfileHeaderView.swift */,
+				57D4F2FF27C1670F002E5132 /* ProfileSubHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			files = (
 				57D4F2CF27C10823002E5132 /* ContentView.swift in Sources */,
 				57D4F2FD27C10CC0002E5132 /* Styles.swift in Sources */,
+				57D4F30027C1670F002E5132 /* ProfileSubHeaderView.swift in Sources */,
 				57D4F2F827C10B77002E5132 /* AppConstants.swift in Sources */,
 				57D4F2CD27C10823002E5132 /* MyProfileApp.swift in Sources */,
 				57D4F2FB27C10C15002E5132 /* ProfileHeaderView.swift in Sources */,

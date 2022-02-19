@@ -19,7 +19,6 @@ struct ProfileHeaderView: View {
                 .padding(.top, paddingDefault)
             
             Styles.TitleText("Alessandro Zoffoli")
-            
             Spacer()
         }
     }

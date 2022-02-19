@@ -21,7 +21,7 @@ struct Styles {
 
     static func DetailText(_ title: String, isOpaque: Bool = true) -> some View {
         return Text(title)
-            .fontWeight(.light)
+            .fontWeight(.regular)
             .foregroundColor(colorAccentPrimary)
             .font(.system(size: fontSizeRegular))
             .multilineTextAlignment(.center)

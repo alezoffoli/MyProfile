@@ -10,9 +10,9 @@ import SwiftUI
 
 // MARK: Colors
 
-let colorDeepPrimary = Color(red: 59 / 255, green: 105 / 255, blue: 120 / 255)
-let colorLightPrimary = Color(red: 132 / 255, green: 169 / 255, blue: 172 / 255)
-let colorAccentPrimary = Color(red: 228 / 255, green: 227 / 255, blue: 227 / 255)
+let colorDeepPrimary = Color(red: 255 / 255, green: 186 / 255, blue: 146 / 255)
+let colorLightPrimary = Color(red: 254 / 255, green: 247 / 255, blue: 220 / 255)
+let colorAccentPrimary = Color(red: 48 / 255, green: 71 / 255, blue: 94 / 255)
 
 // MARK: Corner Radius
 
@@ -29,3 +29,7 @@ let imageSizeDefault = CGSize(width: 90.0, height: 90.0)
 
 let fontSizeBig: CGFloat = 28.0
 let fontSizeRegular: CGFloat = 12.0
+
+// MARK: Strings
+
+let upworkProfileUrl = "https://www.upwork.com/freelancers/~013c5fbe9e1332dece"
