@@ -11,21 +11,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            VStack(spacing: defaultStackSpacing) {
-                Image("avatar")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: defaultImageSize.width, height: defaultImageSize.height)
-                    .cornerRadius(defaultPadding)
-                    .padding(.top, defaultPadding)
-                
-                Text("Alessandro Zoffoli")
-                    .fontWeight(.semibold)
-                    .foregroundColor(colorDeepPrimary)
-                    .font(.system(size: 28))
-                Spacer()
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            ProfileHeaderView()
                 .frame(maxHeight: 180)
             
             HStack {

@@ -15,6 +15,7 @@
 		57D4F2E827C10826002E5132 /* MyProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4F2E727C10826002E5132 /* MyProfileUITests.swift */; };
 		57D4F2EA27C10826002E5132 /* MyProfileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4F2E927C10826002E5132 /* MyProfileUITestsLaunchTests.swift */; };
 		57D4F2F827C10B77002E5132 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4F2F727C10B5A002E5132 /* AppConstants.swift */; };
+		57D4F2FB27C10C15002E5132 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4F2FA27C10C15002E5132 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		57D4F2E727C10826002E5132 /* MyProfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileUITests.swift; sourceTree = "<group>"; };
 		57D4F2E927C10826002E5132 /* MyProfileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		57D4F2F727C10B5A002E5132 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		57D4F2FA27C10C15002E5132 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				57D4F2CC27C10823002E5132 /* MyProfileApp.swift */,
-				57D4F2CE27C10823002E5132 /* ContentView.swift */,
+				57D4F2F927C10C0E002E5132 /* Views */,
 				57D4F2F627C10B53002E5132 /* Utils */,
 				57D4F2D027C10826002E5132 /* Assets.xcassets */,
 				57D4F2D227C10826002E5132 /* Preview Content */,
@@ -136,6 +138,15 @@
 				57D4F2F727C10B5A002E5132 /* AppConstants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		57D4F2F927C10C0E002E5132 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57D4F2CE27C10823002E5132 /* ContentView.swift */,
+				57D4F2FA27C10C15002E5132 /* ProfileHeaderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 				57D4F2CF27C10823002E5132 /* ContentView.swift in Sources */,
 				57D4F2F827C10B77002E5132 /* AppConstants.swift in Sources */,
 				57D4F2CD27C10823002E5132 /* MyProfileApp.swift in Sources */,
+				57D4F2FB27C10C15002E5132 /* ProfileHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
