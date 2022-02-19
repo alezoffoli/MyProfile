@@ -17,19 +17,18 @@ struct ContentView: View {
             HStack {
                 Styles.DetailText("Software Engineer")
                 Spacer()
+                Styles.VerticalLine()
+                Spacer()
                 Styles.DetailText("Available for work")
             }
             .padding(20)
             
-            Rectangle()
-                .fill(colorAccentPrimary.opacity(Styles.getOpacity(false)))
-                .frame(width: .infinity, height: 1, alignment: .center)
-                .padding([.leading, .trailing], paddingDefault)
+            Styles.HorizontalLine()
                 .offset(y: -20)
             
             Spacer()
             
-            Styles.DetailText("This project was created for the whole purpose of studying SwiftUI", isOpaque: false)
+            Styles.DetailText("This project was created for the sole purpose of studying SwiftUI", isOpaque: false)
                 .padding()
         }
         .background(LinearGradient(colors: [colorLightPrimary, colorDeepPrimary], startPoint: .top, endPoint: .bottom))

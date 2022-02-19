@@ -28,6 +28,20 @@ struct Styles {
             .opacity(getOpacity(isOpaque))
     }
     
+    static func VerticalLine() -> some View {
+        return Rectangle()
+            .fill(colorAccentPrimary.opacity(Styles.getOpacity(false)))
+            .frame(width: 1, height: 20, alignment: .center)
+            .padding([.leading, .trailing], paddingDefault)
+    }
+    
+    static func HorizontalLine() -> some View {
+        return Rectangle()
+            .fill(colorAccentPrimary.opacity(Styles.getOpacity(false)))
+            .frame(width: .infinity, height: 1, alignment: .center)
+            .padding([.leading, .trailing], paddingDefault)
+    }
+    
     static func getOpacity(_ isOpaque: Bool) -> CGFloat {
         
         // Account for user accessibility options
