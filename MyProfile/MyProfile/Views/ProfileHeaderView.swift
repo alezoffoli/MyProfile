@@ -10,18 +10,18 @@ import SwiftUI
 struct ProfileHeaderView: View {
         
     var body: some View {
-        VStack(spacing: defaultStackSpacing) {
+        VStack(spacing: stackSpacingDefault) {
             Image("avatar")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: defaultImageSize.width, height: defaultImageSize.height)
+                .frame(width: imageSizeDefault.width, height: imageSizeDefault.height)
                 .cornerRadius(cornerRadiusImage)
-                .padding(.top, defaultPadding)
+                .padding(.top, paddingDefault)
             
-            TitleText("Alessandro Zoffoli")
+            Styles.TitleText("Alessandro Zoffoli")
+            
             Spacer()
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
