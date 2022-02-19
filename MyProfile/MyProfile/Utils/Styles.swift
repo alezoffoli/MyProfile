@@ -39,7 +39,7 @@ struct Styles {
         return Rectangle()
             .fill(colorAccentPrimary.opacity(Styles.getOpacity(false)))
             .frame(width: .infinity, height: 1, alignment: .center)
-            .padding([.leading, .trailing], paddingDefault)
+            .padding([.leading, .trailing], paddingLine)
     }
     
     static func getOpacity(_ isOpaque: Bool) -> CGFloat {

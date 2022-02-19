@@ -22,7 +22,7 @@ let cornerRadiusImage: CGFloat = 8.0
 // MARK: Sizes and Margins
 
 let paddingDefault: CGFloat = 20.0
-let paddingLine: CGFloat = 16.0
+let paddingLine: CGFloat = 12.0
 
 let stackSpacingDefault: CGFloat = 20.0
 let imageSizeDefault = CGSize(width: 90.0, height: 90.0)

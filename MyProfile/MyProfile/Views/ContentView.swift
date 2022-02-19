@@ -14,12 +14,14 @@ struct ContentView: View {
             ProfileHeaderView()
                 .frame(maxHeight: 180)
             
-            HStack {
+            HStack() {
                 Styles.DetailText("Software Engineer")
+                    .frame(maxWidth: .infinity)
                 Spacer()
                 Styles.VerticalLine()
                 Spacer()
                 Styles.DetailText("Available for work")
+                    .frame(maxWidth: .infinity)
             }
             .padding(20)
             
