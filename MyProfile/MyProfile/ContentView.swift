@@ -11,17 +11,17 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            VStack(spacing: 20.0) {
+            VStack(spacing: defaultStackSpacing) {
                 Image("avatar")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 90.0, height: 90.0)
-                    .cornerRadius(8.0)
-                    .padding(.top, 20.0)
+                    .frame(width: defaultImageSize.width, height: defaultImageSize.height)
+                    .cornerRadius(defaultPadding)
+                    .padding(.top, defaultPadding)
                 
                 Text("Alessandro Zoffoli")
                     .fontWeight(.semibold)
-                    .foregroundColor(Color(red: 174 / 255, green: 204 / 255, blue: 165 / 255))
+                    .foregroundColor(colorDeepPrimary)
                     .font(.system(size: 28))
                 Spacer()
             }
@@ -31,19 +31,26 @@ struct ContentView: View {
             HStack {
                 Text("Software Engineer")
                     .fontWeight(.light)
-                    .foregroundColor(Color(red: 230 / 255, green: 203 / 255, blue: 168 / 255))
+                    .foregroundColor(colorDeepSecondary)
                     .frame(alignment: .leading)
                 Spacer()
                 Text("Available for work")
                     .fontWeight(.light)
-                    .foregroundColor(Color(red: 230 / 255, green: 203 / 255, blue: 168 / 255))
+                    .foregroundColor(colorDeepSecondary)
                     .frame(alignment: .leading)
             }
-            .padding([.leading, .trailing], 20)
+            .padding(20)
             
             Spacer()
+            
+            Text("This project was created for the whole purpose of studying SwiftUI")
+                .font(.system(size: 12))
+                .fontWeight(.light)
+                .multilineTextAlignment(.center)
+                .foregroundColor(colorDeepSecondary)
+                .padding()
         }
-        .background(Color(red: 252 / 255, green: 245 / 255, blue: 220 / 255)) //TODO: Add Gradient
+        .background(colorLightSecondary) //TODO: Add Gradient
         
     }
 }
