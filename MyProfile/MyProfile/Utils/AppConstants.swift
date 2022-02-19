@@ -25,3 +25,6 @@ let cornerRadiusImage: CGFloat = 8.0
 let defaultPadding: CGFloat = 20.0
 let defaultStackSpacing: CGFloat = 20.0
 let defaultImageSize = CGSize(width: 90.0, height: 90.0)
+
+let fontSizeBig: CGFloat = 28.0
+let fontSizeRegular: CGFloat = 12.0

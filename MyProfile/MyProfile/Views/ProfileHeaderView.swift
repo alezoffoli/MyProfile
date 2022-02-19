@@ -18,10 +18,7 @@ struct ProfileHeaderView: View {
                 .cornerRadius(cornerRadiusImage)
                 .padding(.top, defaultPadding)
             
-            Text("Alessandro Zoffoli")
-                .fontWeight(.semibold)
-                .foregroundColor(colorDeepPrimary)
-                .font(.system(size: 28))
+            TitleText("Alessandro Zoffoli")
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

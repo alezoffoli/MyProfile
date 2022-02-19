@@ -15,25 +15,15 @@ struct ContentView: View {
                 .frame(maxHeight: 180)
             
             HStack {
-                Text("Software Engineer")
-                    .fontWeight(.light)
-                    .foregroundColor(colorDeepSecondary)
-                    .frame(alignment: .leading)
+                DetailText("Software Engineer")
                 Spacer()
-                Text("Available for work")
-                    .fontWeight(.light)
-                    .foregroundColor(colorDeepSecondary)
-                    .frame(alignment: .leading)
+                DetailText("Available for work")
             }
             .padding(20)
             
             Spacer()
             
-            Text("This project was created for the whole purpose of studying SwiftUI")
-                .font(.system(size: 12))
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-                .foregroundColor(colorDeepSecondary)
+            DetailText("This project was created for the whole purpose of studying SwiftUI")
                 .padding()
         }
         .background(colorLightSecondary) //TODO: Add Gradient
