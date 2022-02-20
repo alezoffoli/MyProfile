@@ -18,7 +18,7 @@ struct ProfileHeaderView: View {
                 .cornerRadius(cornerRadiusImage)
                 .padding(.top, paddingDefault)
             
-            Styles.TitleText("Alessandro Zoffoli")
+            TitleText(title: "Alessandro Zoffoli")
             Spacer()
         }
     }

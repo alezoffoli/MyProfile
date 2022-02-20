@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @Environment(\.openURL) var openURL
+    @State var upworkAlertIsPresented: Bool = false
     
     var body: some View {
         
@@ -21,17 +22,26 @@ struct ContentView: View {
                 ProfileSubHeaderView()
                     .padding(20)
                     .frame(maxHeight: 80)
-                Styles.HorizontalLine()
+                HorizontalLine()
                     .offset(y: -20)
             }.gesture( TapGesture().onEnded({
-                guard let url = URL(string: upworkProfileUrl) else {
-                    return
-                }
-                openURL(url) // TODO: Move this logic and add a confirmation dialog
+                upworkAlertIsPresented = true
             })
-            )
+            ).alert(NSLocalizedString("You are being redirected to my Upwork profile", comment: ""), isPresented: $upworkAlertIsPresented, actions: {
+                Button(NSLocalizedString("Later", comment: "")) {
+                    upworkAlertIsPresented = false
+                }
+                Button(NSLocalizedString("Proceed", comment: "")) {
+                    upworkAlertIsPresented = false
+                    guard let url = URL(string: upworkProfileUrl) else {
+                        return
+                    }
+                    openURL(url) // TODO: Move this logic and add a confirmation dialog
+                }
+            })
+            
             Spacer()
-            Styles.DetailText("This project was created for the sole purpose of studying SwiftUI", isOpaque: false)
+            DetailText(title: "This project was created for the sole purpose of studying SwiftUI", hasOpacity: true)
                 .padding()
         }
         .background(LinearGradient(colors: [colorLightPrimary, colorDeepPrimary], startPoint: .top, endPoint: .bottom))

@@ -11,12 +11,12 @@ struct ProfileSubHeaderView: View {
     
     var body: some View {
         HStack() {
-            Styles.DetailText("Software Engineer")
+            DetailText(title: "Software Engineer", hasOpacity: false)
                 .frame(maxWidth: .infinity)
             Spacer()
-            Styles.VerticalLine()
+            VerticalLine()
             Spacer()
-            Styles.DetailText("Available for work")
+            DetailText(title: "Available for work", hasOpacity: false)
                 .frame(maxWidth: .infinity)
         }
     }
